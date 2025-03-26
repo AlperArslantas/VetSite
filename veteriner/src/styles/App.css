@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #45a049;
+  --text-color: #333;
+  --light-bg: #f9f9f9;
+  --white: #ffffff;
+}
+
+.app {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.main-content {
+  padding-top: 80px;
+  /* Navbar'ın yüksekliği kadar padding */
+}
+
+.page-container {
+  min-height: calc(100vh - 80px);
+  padding: 2rem;
+}
